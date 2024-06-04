@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search page</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/second.css">
+
+
+
+</head>
+
+<body>
+    <div class="sidebar">
+        <a href="./index.html"><img src="./image/image 26.png" alt=""></a>
+        <a href="./index.html"><img src="./image/home.png" alt="home"></a>
+        <a href="./second.html"><img src="./image/Group 48095750.png" alt=""></a>
+        <a href="#"><img src="./image/Group 48095751.png" alt=""></a>
+        <a href="#"><img src="./image/Group 48095752.png" alt=""></a>
+    </div>
+    <div class="main-content">
+        <h4>Making an experience with your though!</h4>
+        <div class="search-bar">
+            <input type="text" class="search-input" placeholder="Ask me anything...">
+            <button class="search-button"><img style="margin: auto; height: 17px;" src="./image/star.svg" alt="">
+                <h6 style="margin: auto; font-size: 15px; font-weight: 100;">Shop</h6>
+            </button>
+        </div>
+        <div class="message" id="message"></div>
+    </div>
+    <script>
+        document.querySelector('.search-button').addEventListener('click', () => {
+            const query = document.querySelector('.search-input').value.trim().toLowerCase();
+            const messageElement = document.getElementById('message');
+
+            if (query === 'black shirt') {
+                window.location.href = './t-shirt-page1.html';
+            } else {
+                alert('Item not available');
+            }
+        });
+    </script>
+</body>
+
+</html>

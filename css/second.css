@@ -1,0 +1,66 @@
+h4{
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+
+
+@media (max-width:900px) {
+    body{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-content: center;
+
+    }
+    .card {
+        background-color: #343434;
+        border-radius: 20px;
+        padding: 20px;
+        width: 200px;
+        height: 201px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s;
+        position: relative;
+    } 
+    .sidebar {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 15%;
+        position: static;
+        padding: 10px 0;
+    }
+
+    .sidebar a {
+        font-size: 20px;
+        margin: 10 10px;
+        height: auto;
+
+    }   
+}
+@media (max-width:800px) {
+    .search-bar {
+        width: 50%;
+        margin-left: 20%;
+        margin-top: 80%;
+    }
+
+    .search-button {
+        left: 240px;
+    }
+}
+
+@media (max-width:700px) {
+    .search-bar {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 100%;
+    }
+
+    .search-button {
+        left: 250px;
+    }
+}
